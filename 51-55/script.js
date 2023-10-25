@@ -1,4 +1,10 @@
 console.log("connected");
+console.log("connected");
+console.log("connected");
+console.log("connected");
+console.log("connected");
+console.log("connected");
+console.log("connected");
 var btn = document.getElementById("btn_click");
 
 function clickPara(element) {
