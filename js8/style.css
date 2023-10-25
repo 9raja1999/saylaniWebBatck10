@@ -1,0 +1,16 @@
+.row-height {
+    background-color: aquamarine;
+    height: 100px;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: rgb(180, 34, 168);
+    }
+  }

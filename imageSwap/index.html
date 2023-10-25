@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img swap</title>
+</head>
+<style>
+    img{
+        width: -25%;
+    }
+    .container{
+        display: flex;
+    }
+</style>
+<body>
+    <div class="container" id="con">
+       <img src="./after.jpg" alt="">
+       <img src="./before.jpg" alt="">
+       <img src="./after.jpg" alt="">
+
+    </div>
+    <div class="btn">
+        <button onclick="swap()">swap</button>
+    </div>
+
+    <script>
+   function swap(){
+    let con = document.getElementById("con")
+     con.style.flexDirection="row-reverse"
+   }
+    </script>
+</body>
+</html>

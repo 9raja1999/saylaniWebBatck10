@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        border: 1px solid red;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output">
+
+    </div>
+    <form action="#" onsubmit="mySubmit()">
+      <input
+        onfocus="onFocus(this)"
+        onblur="onBlur(this)"
+        id="fname"
+        type="text"
+        placeholder="firstName"
+        value=""
+      />
+      <input
+        onfocus="onFocus(this)"
+        onblur="onBlur(this)"
+        id="lname"
+        type="text"
+        placeholder="lastName"
+        value=""
+      />
+      <input
+        onfocus="onFocus(this)"
+        onblur="onBlur(this)"
+        id="email"
+        type="email"
+        placeholder="email"
+        value=""
+      />
+      <input
+        onfocus="onFocus(this)"
+        onblur="onBlur(this)"
+        id="password"
+        type="password"
+        placeholder="password"
+        value=""
+      />
+      <button type="submit">SUBMIT</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
