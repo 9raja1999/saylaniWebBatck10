@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Simple document</title>
+  </head>
+  <body>
+    <!-- <div id="grandParentNode">
+      <div id="siblin1"></div>
+      <div id="parentNode">
+        some text node
+        <p style="border: 1px solid red">There's not much to this.</p>
+        <p>Nor to this.</p>
+        <p>Nor to this.</p>
+        <p>Nor to this.</p>
+        <p>Nor to this.</p>
+        <p>Nor to this.</p>
+        <p>Nor to this.</p>
+        <p id="last">Nor to this.</p>
+      </div>
+      <div id="siblin2"></div>
+    </div> -->
+
+    <!-- <div id="parentNode">
+        
+        
+        SOME TEXT
+        <p>,m,kjhjghjghjghjgjggjh</p></div> -->
+        <ul id="ul1">
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+        </ul>
+        <ul>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+            <li>12</li>
+        </ul>
+    <script>
+      console.log("DOCUMENT", document);
+      var ulNode = document.getElementById('ul1')
+      
+      console.log("DOCUMENT", ulNode.childNodes);
+      console.log("DOCUMENT", ulNode.childNodes.length);
+    //   for(var i = 0 ;i < liElements.length ; i++){
+    //       console.log(liElements[i]);
+    //       liElements[i].innerHTML = "comin soon"
+    //   }
+    //   console.log(
+    //     "PARA NODE TYPE",
+    //     {
+    //         type : document.getElementById("parentNode").nodeType,
+    //         value : document.getElementById("parentNode").firstChild.nodeType,
+    //         valueF : document.getElementById("parentNode").firstChild.nodeValue,
+    //         valueL : document.getElementById("parentNode").lastChild.nodeValue
+    //     }
+    //   );
+    //   console.log(
+    //     "PARA NODE NAME",
+    //     document.getElementById("paraTest").nodeName
+    //   );
+    //   console.log(
+    //     "PARA NODE TEXT",
+    //     document.getElementById("parentNode").nodeValue
+    //   );
+      //   console.log("PARA NODE TEXT", document.getElementById('parentNode').childNodes[1].nodeValue)
+      //   console.log("PARA NODE TEXT", document.getElementById('parentNode').childNodes[2].nodeValue)
+      //   var targetNode = document.getElementById("parentNode");
+      //   console.log("CHILD NODES" , document.getElementById('parentNode').childNodes);
+      //   console.log("NODE TYPE" , document.getElementById('parentNode').childNodes[0].nodeType);
+      //   console.log("NODE TYPE" , document.getElementById('parentNode').childNodes[1].nodeType);
+      //   console.log("GRAND PARENT NODE", targetNode.parentNode);
+      //   console.log("CHILD NODE", targetNode.childNodes[1]);
+      //   console.log("LAST CHILD", targetNode.lastChild);
+      //   console.log("SIBLING NODE 1", targetNode.nextSibling);
+      //   console.log("SIBLING NODE 2", targetNode.previousSibling);
+    </script>
+  </body>
+</html>
