@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        height: 10vh;
+        align-items: stretch;
+      }
+      #product__holder {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        flex: 1;
+      }
+      .product__card {
+        border: 1px solid red;
+        border-radius: 9px;
+        width: 200px;
+      }
+
+      .cart__holder {
+        width: 400px;
+        height: 100vh;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>65 - 67</h1>
+    <div class="container">
+      <div id="product__holder"></div>
+      <div class="cart__holder"></div>
+    </div>
+
+    <script>
+      var productContainerNode = document.getElementById("product__holder");
+
+      var products = [
+        {
+          image: "",
+          name: "iphone",
+        },
+        {
+          image: "",
+          name: "blackberry",
+        },
+        {
+          image: "",
+          name: "samsung",
+        },
+      ];
+      for (var i = 0; i <= products.length; i++) {
+        var productCardNode = document.createElement("div"); //div
+        var imageNode = document.createElement("img"); //img
+        var paraNode = document.createElement("p"); //p
+        productCardNode.setAttribute("class", "product__card"); //<div class="product__card">
+        var productNametext = document.createTextNode(products[i].name);
+        paraNode.appendChild(productNametext);
+        imageNode.setAttribute("src", products[i].image);
+
+        productCardNode.appendChild(imageNode);
+        productCardNode.appendChild(paraNode);
+        productContainerNode.appendChild(productCardNode);
+      }
+    </script>
+  </body>
+</html>
