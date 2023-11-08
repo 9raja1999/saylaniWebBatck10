@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #products-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+      }
+      #products-container .card {
+        border: 1px solid red;
+        width: 250px;
+        min-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ecommerce</h1>
+    <div id="products-container"></div>
+
+    <script src="scripts/loadproducts.js"></script>
+    <script src="scripts/addToCart.js"></script>
+  </body>
+</html>
